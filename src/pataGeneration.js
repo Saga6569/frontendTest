@@ -15,10 +15,6 @@ const users = JSON.parse(getDiff('../__fixtures__/users.json'));
 const conttentTv = JSON.parse(getDiff('../__fixtures__/content.json'));
 const tvChannels = JSON.parse(getDiff('../__fixtures__/tvChannels.json'));
 
-// console.log(conttent);
-// console.log(tvChannels);
-// console.log(users);
-
 const makeTable = (userColl, contentColl, TVColl) => userColl.map((el) => {
   const nameUser = el.name;
   const favoriteContentId = el.favorite_content_id;
